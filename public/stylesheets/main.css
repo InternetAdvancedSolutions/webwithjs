@@ -25,3 +25,32 @@
     .jumbotron .lang-logo img {
       max-width: 100%; }
 
+   div#header {
+	   display:block;
+	   background-color:#aaaaaa;
+	   
+   }
+   
+   div#content {
+	   display:block
+	   background-color:#eeebbb;
+	   font-size:20px;
+   }
+   
+   div#footer {
+	   display:block;
+	   background-color:#aaaaaa;
+   }
+   
+   .hyperlinks {
+	   text-decoration:none;
+	   color:white;
+   }
+   
+   .white {
+	   color:white;
+   }
+   
+   .black {
+	   color:black;
+   }
