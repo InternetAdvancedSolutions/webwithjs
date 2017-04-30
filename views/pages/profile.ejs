@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+
+
+  <% include ../partials/nav.ejs %>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <a href="/" class="lang-logo">
+      <img src="/ashutosh-js.jpg">
+    </a>
+    <div id=header>
+	<h1>Ashutosh Singh</h1>
+    </div>
+	<div id=content>
+	<ul>
+	<li>Certified Web developer from IIT Madras</li>
+	<li>Certified Programmer in C++ from IIT Kharagpur</li>
+	<li>Certified Android developer from IIIT Delhi</li>
+	</div>
+	<div >
+	Comments:<br >    
+	<textarea id=feedback_homepage cols=60 rows =5 maxlength=1000 class=black></textarea><br>
+	<input type=button id=btn_feedback_homepage value=Post class=black >
+	</div>
+	<div id=footer>
+	Posted by: Ashutosh, India<br>
+    Contact information: <a href="mailto:webwithjs@gmail.com" class=hyperlinks>Send Queries</a>
+	</div>
+	<script>
+	var feedback_homepage = document.getElementById("feedback_homepage");
+	var btn_feedback_homepage = document.getElementById("btn_feedback_homepage");
+	
+	btn_feedback_homepage.onclick= function(){
+	
+		
+		btn_feedback_homepage.value="...........posting";
+		
+		btn_feedback_homepage.value="done thanks !";
+	}
+	
+	</script>
+</body>
+</html>
