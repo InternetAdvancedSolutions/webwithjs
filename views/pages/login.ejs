@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
 
+<body>
+
+
+  <% include ../partials/nav_2.ejs %>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <!--<a href="/" class="lang-logo">
+      <img src="/ashutosh-js.jpg">
+    </a>-->
+    <div id=header>
+	<h1>Login </h1>
+    </div>
+    <hr>
+	<div id=content>
+	<pre>
+	
+	User name			:<input type=text id=name>
+	Password			:<input type=text id=name>
+	
+	                 <button>Submit</button>
+	</pre>
+	</div>
+   <hr>
+	
+  <hr>
+	<div id=footer>
+	Posted by: Ashutosh, India<br>
+    Contact information: <a href="mailto:webwithjs@gmail.com" class=hyperlinks>Send Queries</a>
+	</div>
+	<script>
+	var feedback_homepage = document.getElementById("feedback_homepage");
+	var btn_feedback_homepage = document.getElementById("btn_feedback_homepage");
+	
+	btn_feedback_homepage.onclick= function(){
+	
+		
+		btn_feedback_homepage.value="...........posting";
+		
+		btn_feedback_homepage.value="done thanks !";
+	}
+	
+	</script>
+</body>
+</html>
