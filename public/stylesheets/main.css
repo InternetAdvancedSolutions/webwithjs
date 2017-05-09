@@ -35,7 +35,7 @@
    }
    
    div#content {
-	   display:block
+	   display:block;
 	   background-color:#eeebbb;
 	   font-size:20px;
    }
