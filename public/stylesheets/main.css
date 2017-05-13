@@ -45,6 +45,10 @@
 	   background-color:#aaaaaa;
    }
    
+  ul li {
+	  color:black;
+}
+
    .hyperlinks {
 	   text-decoration:none;
 	   color:white;
