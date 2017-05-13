@@ -33,6 +33,12 @@
 	   background-color:#aaaaaa;
 	   
    }
+
+div#answer {
+	   display:block;
+	   background-color:#fffeee;
+	   
+   }
    
    div#content {
 	   display:block;
