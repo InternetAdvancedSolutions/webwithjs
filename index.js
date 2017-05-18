@@ -15,7 +15,7 @@ app.get('/qs', function (request, response) {
   });
 });
 
-/*app.get('/db', function (request, response) {
+app.get('/db', function (request, response) {
   pg.connect(process.env.DATABASE_URL, function(err, client, done) {
     client.query('SELECT * FROM questions', function(err, result) {
       done();
@@ -25,7 +25,7 @@ app.get('/qs', function (request, response) {
        { response.render('pages/db', {results: result.rows} ); }
     });
   });
-});*/
+});
 
 app.set('port', (process.env.PORT || 5000));
 
