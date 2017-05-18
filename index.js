@@ -10,7 +10,7 @@ app.get('/qs', function (request, response) {
       if (err)
        { console.error(err); response.send("Error " + err); }
       else
-       { response.render('pages/db', {results: result.rows[1]} ); }
+       { response.render('pages/db', {results: result.rows} ); }
     });
   });
 });
