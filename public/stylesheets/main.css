@@ -100,3 +100,7 @@ div#answer {
 .fontcolor_white {
     color:white;
 }
+
+u {
+    text-decoration: underline;
+}
