@@ -58,8 +58,17 @@
 
 	<div id=content class=col-sm-4>
 	<h2> Ask Question</h2><br>
-	Question title/subject:
-	<textarea id=topic cols=25 rows =1 maxlength=500 class=black></textarea><br>
+	Select subject:
+	<select type=number id=select_sub_category>
+            <option value="education">General</option>
+            <option value="business">Art</option>
+            <option value="game">Aviation</option>
+            <option value="shopping">biology</option>
+            <option value="travel">chemistry</option>
+           <option value="tools">Medical Sciences</option>
+           <option value="news">Engineering</option>
+           <option value="communication">Computer science & engineering</option>
+        </select>  <input type="button" value=Submit id=app_category>
 	Your question:
 	<textarea id=topic cols=25 rows =9 maxlength=500 class=black></textarea><br><br>
 	<button id=btn_topic class=black>Submit</button>
