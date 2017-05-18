@@ -104,3 +104,7 @@ div#answer {
 u {
     text-decoration: underline;
 }
+
+scroll {
+	 overflow: scroll;
+}
