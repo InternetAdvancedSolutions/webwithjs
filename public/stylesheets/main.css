@@ -71,3 +71,32 @@ div#answer {
    .black {
 	   color:black;
    }
+
+.center {
+    text-align: center;
+}
+
+.text-big {
+    font-size: 300%;
+}
+
+.text-medium{
+    font-size:200%;
+}
+
+.text-table{
+    font-size:150%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.img-medium {
+    height: 150px;
+    
+}
+
+.fontcolor_white {
+    color:white;
+}
