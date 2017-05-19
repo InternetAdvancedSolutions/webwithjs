@@ -3,10 +3,11 @@ var app = express();
 
 //var pg = require('pg');
 var Pool= require('pg').Pool;
+
 app.get('/qs', function(request,response){
-   pool.query('SELECT * FROM questions ',  function(err,result){
+   Pool.query('SELECT * FROM questions ',  function(err,result){
            if (err) {
-              res.status(500).send(err.toString());
+              response.status(500).send(err.toString());
            } else {
                 
                 //var articleData=result.rows[0];
