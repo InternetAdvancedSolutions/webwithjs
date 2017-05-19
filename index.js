@@ -7,13 +7,13 @@ var Pool= require('pg').Pool;
 app.get('/qs', function(request,response){
    Pool.query('SELECT * FROM questions ',  function(err,result){
            if (err) {
-              {console.error(err); response.send("Error"+err);}
+              {console.error(err); response.send("Error" + err);}
            } else {
                 
                 //var articleData=result.rows[0];
                // res.send(createTemplate(articleData));
                
-              response.render('pages/qs', {results:result.rows);    
+              response.render('pages/qs', {results:result.rows});    
            }
        });
 /*
