@@ -13,7 +13,7 @@
 
 <ul>
     <% results.forEach(function(r) { %>
-        <li><%= r.id %>- <%= r.question %> -by  - <%= r.name %> <%= r.last_name %>. </li>
+        <li><%= r.id %>- <a href=><%= r.question %></a>&nbsp;&nbsp;&nbsp; -asked by  - <%= r.name %> <%= r.last_name %>. </li>
     <% }); %>
 </ul>
 
