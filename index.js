@@ -1,8 +1,21 @@
 var express = require('express');
 var app = express();
 
-var pg = require('pg');
-
+//var pg = require('pg');
+var Pool= require('pg').Pool;
+app.get('/qs', function(request,response){
+   pool.query('SELECT * FROM questions ',  function(err,result){
+           if (err) {
+              res.status(500).send(err.toString());
+           } else {
+                
+                //var articleData=result.rows[0];
+               // res.send(createTemplate(articleData));
+               
+              response.send(result.rows);    
+           }
+       });
+/*
 app.get('/qs', function (request, response) {
   pg.connect(process.env.DATABASE_URL, function(err, client, done) {
     client.query('SELECT * FROM users', function(err, result) {
@@ -26,7 +39,7 @@ app.get('/db', function (request, response) {
     });
   });
 });
-
+*/
 app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static(__dirname + '/public'));
