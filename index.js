@@ -2,24 +2,25 @@ var express = require('express');
 var app = express();
 
 //var pg = require('pg');
-var Pool= require('pg').Pool;
+
+var pool= require('pg').Pool;
 
 app.get('/qs', function(request,response){
-   Pool.query('SELECT * FROM questions ',  function(err,result){
+   pool.query('SELECT * FROM questions ',  function(err,result){
            if (err) {
-              {console.error(err); response.send("Error" + err);}
+              {console.error(err); response.send("Error " + err);}
            } else {
                 
                 //var articleData=result.rows[0];
                // res.send(createTemplate(articleData));
                
-              response.render('pages/qs', {results:result.rows});    
+              response.render('pages/db', {results:result.rows});    
            }
        });
 /*
 app.get('/qs', function (request, response) {
   pg.connect(process.env.DATABASE_URL, function(err, client, done) {
-    client.query('SELECT * FROM users', function(err, result) {
+    client.query('SELECT * FROM questions', function(err, result) {
       done();
       if (err)
        { console.error(err); response.send("Error " + err); }
@@ -31,7 +32,7 @@ app.get('/qs', function (request, response) {
 
 app.get('/db', function (request, response) {
   pg.connect(process.env.DATABASE_URL, function(err, client, done) {
-    client.query('SELECT * FROM questions', function(err, result) {
+    client.query('SELECT * FROM users', function(err, result) {
       done();
       if (err)
        { console.error(err); response.send("Error " + err); }
